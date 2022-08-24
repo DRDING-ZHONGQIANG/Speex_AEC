@@ -1,0 +1,6 @@
+LD_LIBRARY_PATH="/home/test/PycharmProjects/speexdsp/libspeexdsp/.libs:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH 
+g++ testecho.cpp -l speexdsp -o dingtestecho
+./dingtestecho HS_Speech_1_mic_edit_16k.wav Speech_1_lpb_edit_16k.wav out.wav 
+
+
